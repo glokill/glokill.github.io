@@ -1,0 +1,360 @@
+.pages-nav {
+    width: 100%;
+    height: 68px;
+    background-color: #fff;
+    border-bottom: 1px solid #c2c3c3;
+}
+.p-nav {
+    float: right;
+}
+.p-nav li {
+    float:left;
+    padding:20px  28px 0;
+    transform: translate(28px);
+}
+.p-nav li a {
+    float:left;
+    color: #333;
+    margin-bottom: 10px;
+    font-family: "Microsoft YaHei";
+    /*color: #333;*/
+    /*当鼠标滚轮下拉后显示此代码*/
+}
+.hovered-01 {
+    font-weight: 700;
+}
+.p-nav li span {
+    clear: both;
+    height: 4px;
+    background-color: #333;
+    display: none;
+}
+.p-nav li:nth-child(3) span {
+    display: none;
+}
+.p-nav li:nth-child(4) span {
+    display: none;
+}
+.p-nav li:hover {
+    font-weight: bold;
+}
+.p-nav li:nth-child(1):hover #nav-1{
+    display: block;
+}
+.p-nav li:nth-child(2):hover #nav-2{
+    display: block;
+}
+.p-nav li:nth-child(3):hover #nav-3{
+    display: block;
+}
+.p-nav li:nth-child(4):hover #nav-4{
+    display: block;
+}
+.shadow-nav{
+    position: fixed;
+    top: 0;
+    z-index: 10;
+    width: 100%;
+    height: 68px;
+    background-color: rgba(255,255,255,0.95);
+    box-shadow: 0 3px 6px rgba(0,0,0,0.2);
+}
+
+/*banner部分开始*/
+.s-banner {
+    background: url("../img/article-banner.png") no-repeat;
+    width: 1180px;
+    height: 300px;
+    margin: 20px auto 40px;
+}
+.practice-banner {
+    background: url("../img/practice-banner.png") no-repeat;
+}
+/*banner部分结束*/
+
+/*内容开始部分*/
+.artcs {
+    float: left;
+    width: 780px;
+}
+.cards {
+    float: left;
+    height: 100%;
+    width: 740px;
+    background-color: #fff;
+    border-radius: 4px;
+    margin-bottom: 20px;
+    padding: 20px;
+}
+.article-pics {
+    height: 100px;
+    width: 180px;
+    float: left;
+    filter: grayscale(30%);
+}
+/*填写图片区域*/
+.pic-01 {
+     background: url("../img/article/s-article-pic-01.png") no-repeat;
+ }
+.pic-02 {
+    background: url("../img/article/s-article-pic-02.png") no-repeat;
+}
+.pic-03 {
+    background: url("../img/article/s-article-pic-03.png") no-repeat;
+}
+.pic-04 {
+    background: url("../img/article/s-article-pic-04.png") no-repeat;
+}
+.pic-05 {
+    background: url("../img/article/s-article-pic-05.png") no-repeat;
+}
+
+.pic-06 {
+    background: url("../img/article/s-article-pic-06.png") no-repeat;
+}
+.pic-07 {
+    background: url("../img/article/s-article-pic-07.png") no-repeat;
+}
+.pic-08 {
+    background: url("../img/article/s-article-pic-08.png") no-repeat;
+}
+.pic-09 {
+    background: url("../img/article/s-article-pic-09.png") no-repeat;
+}
+/*图片填写区域结束*/
+.text-group {
+    float: right;
+    width: 480px;
+}
+.text-group a {
+    font-size: 18px;
+    font-weight: 700;
+    color: #333;
+}
+.text-group a:hover {
+    color: #0e92a5;
+    text-decoration: underline;
+}
+.text-group ul {
+    width: 480px;
+    overflow: hidden;
+}
+.text-group ul li {
+    float: left;
+    margin: 20px 0 22px 20px;
+    color: #ff7a00;
+    line-height: 14px;
+    font-weight: 700;
+}
+.text-group ul li:nth-child(1) {
+    color: #02899c;
+    margin-left: 0;
+    margin-right: 13px;
+}
+.plug-jn {
+    float: left;
+    font-size: 12px;
+    color: #fff;
+    width: 73px;
+    line-height: 24px;
+    background-color: #02899c;
+    text-align: center;
+    cursor: default;
+}
+.plug-xf {
+    float: left;
+    font-size: 12px;
+    color: #fff;
+    width: 73px;
+    line-height: 24px;
+    background-color: #2a6496;
+    text-align: center;
+    cursor: default;
+}
+.plug-xt {
+    float: left;
+    font-size: 12px;
+    color: #fff;
+    width: 73px;
+    line-height: 24px;
+    background-color: #efbc9f;
+    text-align: center;
+    cursor: default;
+}
+.text-group p {
+    float: right;
+    font-size: 12px;
+    color: #666;
+    line-height: 24px;
+    font-weight: 700;
+    cursor: default;
+}
+.text-group p span {
+    font-size: 12px;
+    margin-right: 8px;
+    font-family: icomoon;
+    font-weight: 400;
+}
+.cards:hover {
+    box-shadow:0 2px 6px rgba(0,0,0,0.2);
+    transition: 0.2s;
+}
+.cards:hover .article-pics {
+    filter: grayscale(0%);
+    transition: 0.5s;
+}
+.select-pages {
+    margin-left: 300px;
+}
+.select-pages a {
+    float: left;
+    width: 20px;
+    height: 20px;
+    background-color: #dadada;
+    border-radius: 2px;
+    margin: 40px 4px 60px;
+    text-align: center;
+    line-height: 20px;
+    font-size: 12px;
+    color: #666;
+}
+.select-pages a:nth-child(1) {
+    background-color: #02899c;
+    color: #fff;
+}
+.select-pages a:nth-child(5) {
+    width: 54px;
+}
+.select-pages a:hover {
+    background-color: #02899c;
+    color: #fff;
+}
+/*左侧主要内容到此结束*/
+
+/*开始右侧作品展示栏*/
+.net-links {
+    width: 380px;
+    float: right;
+    background-color: #fff;
+    overflow: hidden;
+    padding-bottom: 20px;
+    border-radius: 4px;
+}
+.net-links p {
+    text-decoration: none;
+    font-weight: 700;
+    width: 100%;
+    border-bottom: 2px solid #03899c;
+}
+.net-links p span{
+    font-size: 18px;
+    line-height: 18px;
+    color: #333;
+    margin: 20px 0 8px 20px;
+    display: inline-block;
+}
+.net-links div {
+    margin: 20px 0 0 20px;
+    width: 340px;
+    height: 120px;
+    float: left;
+    overflow: hidden;
+}
+.link-01 {
+    background: url("../img/net-link01.png") no-repeat;
+    width: 340px;
+    height: 120px;
+    display: block;
+}
+.link-02 {
+    background: url("../img/net-link02.png") no-repeat;
+    width: 340px;
+    height: 120px;
+    display: block;
+}
+.link-03 {
+    background: url("../img/net-link03.png") no-repeat;
+    width: 340px;
+    height: 120px;
+    display: block;
+}
+.net-links div:hover {
+    box-shadow:0 3px 9px #999;
+}
+.net-links div:hover a {
+    transform: scale(1.1);
+    transition: 0.5s;
+}
+/*页尾部分开始*/
+
+.page-footer {
+    float: left;
+    width: 100%;
+    border-top: 2px solid #02899c;
+    background-color: #1a1a1a;
+    padding: 30px 0 30px;
+}
+.page-mt {
+    margin: 0 auto;
+    width: 860px;
+}
+.page-mt a {
+    margin: 0 65px 0;
+    font-size: 14px;
+    color: #999;
+}
+.page-mt a:nth-child(2),
+.page-mt a:nth-child(3) {
+    color: #efbc9f;
+}
+.page-mt a:nth-child(3) {
+    position: relative;
+}
+.page-mt a:nth-child(3) span {
+    display: block;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background-color: #fb701c;
+    position: absolute;
+    right: -10px;
+    top: -8px;
+}
+.page-mt a:hover {
+    color: #ffffff;
+}
+/*以上是文章部分内容*/
+
+/*=======练习部分新增内容在此后面========*/
+/*.add-nature {*/
+    /*height: 100%;*/
+/*}*/
+.add-nature p {
+    color: #333;
+    font-size: 14px;
+    width: 105px;
+    margin: 0 auto;
+    padding: 20px;
+    cursor: default;
+}
+.add-nature p span {
+    color: #02899c;
+    float: right;
+}
+.practice-pics {
+    width: 740px;
+    height: 540px;
+    border: 1px solid #f2dede;
+    box-sizing: border-box;
+    border-radius: 4px;
+    background-size: 750px;
+    background-repeat: no-repeat;
+    background-position: top;
+    background-color: #f3f3f3;
+}
+/*.practice-01 {*/
+    /*background: url("../img/practice/prt-01.jpg") no-repeat center;*/
+    /*background-size: cover;*/
+/*}*/
+
+

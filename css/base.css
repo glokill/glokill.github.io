@@ -1,0 +1,130 @@
+/*全局通用部分开始*/
+.mt {
+    max-width: 1180px;
+    margin: 0 auto;
+}
+* {
+    font-size: 14px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    font-family: "Microsoft YaHei UI Light","Microsoft YaHei",tohoma,Arial;
+}
+.clear-fix:before,
+.clear-fix:after {
+    display: table;
+    content: "";
+}
+.clear-fix {
+    *zoom: 1;
+}
+a {
+    text-decoration: none;
+    color: #333;
+}
+body {
+    background-color: #f2f2f2;
+}
+.fl-l {
+    float: left;
+}
+.fl-r {
+    float: right;
+}
+
+@font-face {
+    font-family: 'icomoon';
+    src:  url('../fonts/icomoon.eot?aj1b2w');
+    src:  url('../fonts/icomoon.eot?aj1b2w#iefix') format('embedded-opentype'),
+    url('../fonts/icomoon.ttf?aj1b2w') format('truetype'),
+    url('../fonts/icomoon.woff?aj1b2w') format('woff'),
+    url('../fonts/icomoon.svg?aj1b2w#icomoon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/*全局通用部分结束*/
+
+
+.logo {
+    float: left;
+    margin-top: 8px;
+}
+.logo:hover {
+    filter: contrast(150%);
+    transition: 0.3s;
+}
+.head-nav {
+    width: 100%;
+    padding: 0 auto;
+    height: 68px;
+    display: block;
+    /*background-color: rgba(255,255,255,0.9);*/
+    /*box-shadow: 0px 3px 6px rgba(0,0,0,0.1);*/
+    /*当鼠标滚轮下拉后显示此代码*/
+}
+.fixed {
+    position: fixed;
+    top: 0;
+    z-index: 10;
+    background-color: rgba(255,255,255,0.95);
+    box-shadow: 0 3px 6px rgba(0,0,0,0.2);
+}
+
+/*页头导航部分到此结束*/
+
+/*========页尾部分开始========*/
+
+footer {
+    overflow: hidden;
+    text-align: center;
+    background-color: #1a1a1a;
+}
+footer div:nth-child(1) {
+    font-size: 48px;
+    color: #fff;
+    width: 100%;
+    line-height: 48px;
+    margin-top: 120px;
+}
+#email {
+    display: inline-block;
+    font-size: 28px;
+    color: #999;
+    text-decoration: underline;
+    margin: 60px auto 120px;
+}
+#email:hover {
+    color: #efbc9f;
+    text-decoration: none;
+}
+.b-nav {
+    width: 860px;
+}
+.b-nav a {
+    float: left;
+    display: block;
+    font-size: 14px;
+    color: #999;
+    margin: 0 65px 110px;
+}
+.b-nav a:nth-child(2),
+.b-nav a:nth-child(3) {
+    color: #efbc9f;
+}
+.b-nav a:nth-child(3) {
+    position: relative;
+}
+.b-nav a:nth-child(3) span {
+    display: block;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background-color: #fb701c;
+    position: absolute;
+    right: -10px;
+    top: -8px;
+}
+.b-nav a:hover {
+    color: #ffffff;
+}

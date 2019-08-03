@@ -1,0 +1,409 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>时光记==婚纱摄影</title>
+    <style>
+        a {
+            font-family: Microsoft YaHei;
+            text-decoration: none;
+        }
+
+        img {
+            display: block
+        }
+
+        .nav {
+            height: 76px;
+            background-color: rgb(88, 88, 88);
+            width: 1920px;
+            overflow: hidden;
+        }
+
+        body {
+            width: 1920px;
+            position: relative;
+            left: -10px;
+            top: -10px;
+        }
+
+        .ju_zhong {
+            margin: 0 auto;
+            width: 1400px;
+        }
+
+        .logo {
+            float: left;
+            margin: 6px 71px 20px;
+        }
+
+        .lian_jie {
+            float: left
+        }
+
+        .lian_jie a {
+            padding: 0 27px;
+            font-size: 18px;
+            color: white;
+            line-height: 76px;
+            float: left;
+        }
+
+        .lian_jie a:nth-child(5) {
+            background-color: #eb6f6f
+        }
+
+        .lian_jie a:hover {
+            background-color: #eb6f6f
+        }
+
+        .contact {
+            right: 330px;
+            left: 1470px;
+            font-size: 18px;
+            background-color: white;
+            width: 116px;
+            height: 36px;
+            text-align: center;
+            border-radius: 8px;
+            top: 18px;
+            line-height: 36px;
+            z-index: 2;
+            position: fixed
+        }
+
+        .contact a {
+            color: red
+        }
+
+        .yingcang {
+            width: 300px;
+            height: 100px;
+            background-color: white;
+            font-size: 18px;
+            text-align: left;
+            padding-left: 38px;
+            position: relative;
+            right: 214px;
+            border-radius: 8px;
+            line-height: 50px;
+            font-family: Microsoft YaHei;
+            display: none
+        }
+
+        .contact:hover .yingcang {
+            display: block;
+        }
+
+        .banner {
+            max-width: 1920px
+        }
+
+        .clear-fix {
+            clear: both
+        }
+
+        .jian_jie {
+            margin: 0 auto;
+            overflow: hidden;
+            width: 1400px;
+        }
+
+        .biao_ti {
+            margin: 123px calc(50% - 243px / 2);
+        }
+
+        .zuo {
+            width: 668px;
+            height: 652px;
+            border-right: 1px gray dashed;
+            padding-top: 10px;
+            float: left
+        }
+
+        .wen {
+            width: 610px;
+            font-family: Microsoft YaHei;
+            line-height: 38px;
+            letter-spacing: 2px
+        }
+
+        .you {
+            float: right;
+            width: 668px;
+            font-family: Microsoft YaHei;
+            line-height: 38px;
+            padding-top: 10px;
+            text-align: justify;
+            letter-spacing: 2px
+        }
+
+        .wall_photo {
+            width: 1400px;
+            position: relative;
+            overflow: hidden;
+            margin: 0 auto;
+            margin-bottom: 70px;
+        }
+
+        .zp01 {
+            margin: 30px 0 0 20px;
+            float: left;
+        }
+
+        .zp02 {
+            float: left;
+            margin-top: 120px;
+        }
+
+        .zp03 {
+            position: absolute;
+            top: 0px;
+            right: 40px;
+        }
+
+        .zp04 {
+            clear: left;
+            margin-left: 50px;
+            transform: translateY(10px)
+        }
+
+        .zp05 {
+            position: absolute;
+            top: 700px;
+            left: 590px;
+        }
+
+        .zp06 {
+            position: absolute;
+            right: 40px;
+            top: 460px;
+        }
+
+        .list {
+            width: 1400px;
+            overflow: hidden;
+            margin: 0 auto;
+            margin-bottom: 100px;
+        }
+
+        .hong {
+            padding-left: 20px;
+            color: red;
+            font-size: 36px;
+            font-family: Microsoft YaHei
+        }
+
+        .bt {
+            font-size: 36px;
+            font-family: Microsoft YaHei
+        }
+
+        .list h1 {
+            font-size: 18px;
+            color: #545454;
+            padding-left: 20px;
+        }
+
+        table {
+            width: 1400px;
+        }
+
+        table td {
+            font-size: 18px;
+            font-family: Microsoft YaHei;
+            color: #545454;
+            float: left;
+            line-height: 32px;
+        }
+
+        .dian01 {
+            margin: 0 122px 0 56px;
+        }
+
+        .dian02 {
+            margin-left: 100px;
+        }
+
+        table .dian03 {
+            color: #eb6f6f;
+            font-size: 24px;
+            margin-right: 20px;
+            float: right
+        }
+
+
+        .zhibiao {
+            position: absolute;
+            right: 343px;
+            bottom: 167px
+        }
+
+        .yewei {
+            width: 1400px;
+            margin: 0 auto;
+            height: 480px;
+            background-color: #545454;
+            overflow: hidden
+        }
+
+        h6 {
+            font-family: Microsoft YaHei;
+            font-size: 18px;
+            color: white;
+            display: block;
+            margin-left: 110px;
+        }
+
+        .yewei ul {
+            color: red;
+            font-family: Microsoft YaHei;
+            font-size: 18px;
+            float: left;
+            margin-left: 70px;
+            margin-right: 42px;
+        }
+
+        .yewei li {
+            color: #ececec;
+            font-size: 14px;
+            margin-top: 30px;
+        }
+
+        .yewei a {
+            color: white
+        }
+
+        .yewei .huang {
+            color: yellow
+        }
+    </style>
+
+
+</head>
+
+
+<body>
+<div class="contact"><a href="">联系我们</a>
+    <div class="yingcang"><p>联系电话：027-88888888<br>QQ：88888888</p></div>
+</div>
+
+<div class="nav">
+    <div class="ju_zhong">
+        <div class="logo"><img src="images/logo.png" alt=""></div>
+
+        <div class="lian_jie"><a href="shiguangji.html" target="_blank">时光首页</a>
+            <a href="yang_zhang.html" target="_blank">样片欣赏</a>
+            <a href="she_shi.html" target="_blank">摄影师自选</a>
+            <a href="">档期预约</a>
+            <a href="jie_shao.html">关于时光记</a>
+            <a href="kou_bei.html" target="_blank">口碑与评价</a></div>
+    </div>
+</div>
+<div class="banner"><img src="images/banner_gy.jpg" alt="男女一起笑"></div>
+
+<div class="jian_jie">
+    <div class="biao_ti"><img src="images/text_biaoti.png" alt="wenzi"></div>
+    <div class="zuo">
+        <div class="wen">
+            <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;春天虽是河水泛滥的季节，它又是孕育的开端。当春风春雨一夜之间挂满我们视野的枝头，我们就会忘却冬日里寒冷的疼痛。我们在春天里彼此守望；在守望中彼此牵挂；在牵挂中彼此等待。</p>
+            <p>&nbsp;</p>
+            <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;我知道，这就是对于生命中流传已久，而对于我们来说又是失传已久的爱,全部萌生在这美好的春天!</p>
+            <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;起源：孟菲斯风格最早形成于1981年，是由一群意大利籍家具设计师探索出来的一种装饰艺术的设计风格。他们反对单调冷峻的现代主义，提倡装饰，强调手工艺方法制作的产品，并积极从波普艺术、东方艺术、非洲拉美的传统艺术中寻求灵感。
+                <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;上个世纪70年代，非常流行极简主义和现代主义，物极必反，不会有一种设计风格永远流行，总有人看多了没有装饰性、没有个性化的设计风格，厌倦了单调冷峻的现代主义，所以才有了孟菲斯风格的诞生。孟菲斯的兴起可以说是「装饰主义」的复苏。
+            </p>
+
+
+        </div>
+    </div>
+    <div class="you"><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;风格特点：孟菲斯风格在色彩上，常常打破配色规律，喜欢用一些靓丽、纯度高、大胆、对比强烈的配色，借鉴了波普艺术的配色。在排版上，元素之间没有过多的联系，元素的排列常常无规律可循，正是因为无规律可循，跳跃的色彩和元素运用得好，反而更能吸引人的眼球，但是要做到「形散神不散」，构图上一定要保持平衡，我认为这是做好孟菲斯风格的必要。孟菲斯风格还有一个很明显的特点，就是运用大量的几何元素，点、线、面综合运用。规则的几何图形有圆形、三角形、矩形、圆环、波浪线、网格、斜杠等等，不规则的几何图形也是由点、线、面拼贴而成。把这些规则的几何图形和不规则的几何图形排列好，再加上大胆跳跃的配色，就可以做出孟菲斯风格了。我认为孟菲斯风格的两个精髓就在于靓丽的色彩和丰富的几何图形的填充。</p>
+        <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;基于这样的品牌基调，时光记不断追求完美，也在至臻至美的产品与服务上，投注大量的心血与努力。时光记摄影源于武汉，致力于为中国婚嫁市场提供高端定制服务，以3座城14店的微小成绩，饱含对高端市场的热情，致力于更广阔的前景开发。</p>
+    </div>
+</div>
+
+<!--zhaopianqiang-->
+<div class="wall_photo">
+    <img src="images/zh003.jpg" alt="yizhang" class="zp01">
+    <img src="images/zh002.jpg" alt="yizhang" class="zp02">
+    <img src="images/zh001.jpg" alt="yizhang" class="zp03">
+    <img src="images/zh006.jpg" alt="yizhang" class="zp04">
+    <img src="images/zh005.jpg" alt="yizhang" class="zp05">
+    <img src="images/zh003.jpg" alt="yizhang" class="zp06">
+</div>
+<div class="list">
+    <span class="hong">WUHAN</span><span class="bt">时光记</span>
+    <h1>用专业的技术记录您的幸福时光</h1>
+    <div style="border-bottom: 1px solid #949494">
+        <table>
+            <tr>
+                <td class="dian01">时光记婚纱摄影</td>
+                <td>武昌店</td>
+                <td class="dian02">武汉武昌区中东路夯荡大厦1楼</td>
+                <td class="dian03">027-11111111</td>
+            </tr>
+        </table>
+    </div>
+    <div style="border-bottom: 1px solid #949494">
+        <table>
+            <tr>
+                <td class="dian01">时光记婚纱摄影</td>
+                <td>汉口店</td>
+                <td class="dian02">武汉硚口区放解大道现代·世纪城C区1108栋</td>
+                <td class="dian03">027-22222222</td>
+            </tr>
+        </table>
+    </div>
+    <div style="border-bottom: 1px solid #949494">
+        <table>
+            <tr>
+                <td class="dian01">时光记婚纱摄影</td>
+                <td>汉阳店</td>
+                <td class="dian02">武汉沌口区东风路有旺梦乐城3楼1108号</td>
+                <td class="dian03">027-33333333</td>
+            </tr>
+        </table>
+    </div>
+
+</div>
+
+
+<div class="yewei">
+    <div class="clear-fix"></div>
+    <h6>站点导航</h6>
+
+    <ul>HOME
+    </ul>
+
+    <ul type="none">BRAND
+        <li><a href="">时光记视觉中心</a></li>
+        <li><a href="">时光记技术输出案</a></li>
+        <li><a href="">时光摄影客服中心</a></li>
+        <li><a href="">时光记造型设计室</a></li>
+    </ul>
+
+    <ul type="none">ABOUT US
+        <li><a href="">时光记品牌介绍</a></li>
+        <li><a href="">时光记商铺大全</a></li>
+        <li><a class="huang" href="#">时光记人才计划</a></li>
+        <li><a href="">快速了解时光记</a></li>
+        <li><a href="">免责声明及法律条款</a></li>
+    </ul>
+
+    <ul type="none">WORK SHOW
+        <li><a href="">作品小样</a></li>
+        <li><a class="huang" href="#">每日客片更新</a></li>
+        <li><a href="">高端棚拍系列</a></li>
+        <li><a href="">时尚外景系列</a></li>
+        <li><a href="">创意年轻系列</a></li>
+    </ul>
+
+    <ul type="none">NEWS
+        <li><a href="">最新新闻公告</a></li>
+        <li><a class="huang" href="#">我们的活动</a></li>
+        <li><a href="">时光记电子刊</a></li>
+    </ul>
+</div>
+
+
+</body>
+</html>

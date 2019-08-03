@@ -1,0 +1,204 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>湖北君集水处理有限公司</title>
+<style>
+	img{display: block;}
+	a{text-decoration:none;font-family: Microsoft YaHei;}
+	div{font-family: Microsoft YaHei}
+	.header{max-width: 1200px;margin: 0 auto;overflow: hidden;}	
+	.logo{float: left;margin-right:75px }
+	@media(max-width:600px){.shouye,.nav{display: none}.logo{margin: 10px calc(50% - 115px);}}
+	.shouye{float: left;color:#3053a4;padding: 10px 10px;margin-right: 37px;font-size: 18px;line-height: 40px}
+	.nav{float: left;}
+	.biaoqian{float: left;color:#3053a4;padding: 10px 15px;font-size: 18px;line-height: 40px}
+	.tel{float: left;color:#3053a4;font-size: 18px;font-size: 24px;font-family:Microsoft YaHei ;line-height: 40px;padding: 10px;}
+	.phone{float: left;margin-left: 40px;padding: 22px 0;}
+	.shouye:hover,.biaoqian:hover{background-color:#3053a4;color: white;transition: 0.6s}
+	.tel:hover{transform: scale(1.2) translateX(10px);}
+	@media (max-width:1180px){.tel{display: none}.phone{display: none}}
+	.logo:hover{transform: rotate(3600deg) scale(0.8);transition: 2s;}
+/*	banner*/
+	.banner{margin: 0 auto;max-width: 1400px;position: relative;}
+	.banner img{width: 100%}
+	.round{width: 8px;height: 8px;border-radius: 50%; background-color: greenyellow;position: absolute;left:calc(50% - 14px);top:93%;display: none }
+	.tound{width: 8px;height: 8px;border-radius: 50%; background-color: white;position: absolute;left:calc(50% - 4px);top:93%; display: none}
+	.yound{width: 8px;height: 8px;border-radius: 50%; background-color: white;position: absolute;left:calc(50% + 6px);top:93%;display: none }
+	.banner:hover .round,.banner:hover .tound,.banner:hover .yound{display: block}
+/*	产品1*/
+	.clearfix{clear: both}
+	.chanp1{margin: 100px auto 0px;max-width:1200px;overflow: hidden;margin-bottom: 30px;}
+	.jieshao1{float:left;width:580px;border: 1px solid lightgray;margin-right:20px;}
+	.hang01{width: 90%;margin:0 auto;margin-top: 14px;margin-left: 10%}
+	.zui,.xin{float: left}
+	.zui{margin-left: 3px}
+	.more{float: right;color: black;margin-right: 3%}
+	.more:hover{color: red}
+	.gexian{background-color: rgb(48, 83, 164);width:calc(30%);height: 2px;float: left;}
+	.gexian2{background-color:#a0a0a0;width:calc(70%);height: 1px;float: left; }
+	.list{float:left;margin-left:10%;font-size:14px;line-height: 20px;}
+	.list li a{text-decoration: none;color: black}
+	.list li a:hover{color: darkblue;text-decoration: underline;}
+	.list2{float: right;}
+	.list2{font-size: 14px;line-height: 20px;margin-right: 22px;color:#848484}
+	@media(max-width:600px){.list2{display: none}}
+	
+/*	产品2*/
+	.jieshao2{float:right;width:580px;border: 1px solid lightgray;}
+	@media (max-width:1180px){.jieshao2{float: left}}
+	.hang02{width: 90%; margin:0 auto;margin-top: 14px;margin-left: 10%}
+	.hezi{max-width: 100%;overflow: hidden}
+	.fuwu01,.fuwu02{float: left;text-align: center;margin: 10px;margin-top: 5%}
+	.wenzi{margin: 6%;0;display: block;color: black;}
+	.wenzi:hover{color: red}
+	.fuwu01{margin-left: calc(50% - 200px);}
+	@media(max-width:600px){.fuwu01,.fuwu02,.wenzi{width: 50%;margin-left: calc(50% - 200px);}}
+	@media(max-width:600px){.wenzi{margin-left: calc(50% - 110px);}}
+	.fuwu01 img:hover,.fuwu02 img:hover{box-shadow: 0px 8px 4.86px 1.14px rgba(148, 148, 148, 0.5);transform: translate(0,2px);transition: 0.3s}
+/*	产品3*/
+	.jieshao3{float:left;width:580px;border: 1px solid lightgray;margin-right:20px;margin-top: 68px}
+	@media (max-width:1180px){.jieshao3{margin-top:0px}}
+	.jieshao3 img{float: left;}
+	.genghao{float: left;font-size: 18px;margin:20px 18px;}
+	.xiangqing{font-size: 14px;float: right;margin-top: 10px;color: black;}
+	.xiangqing:hover{color: red;}
+	.jieshao3 img:hover{box-shadow: 0px 8px 4.86px 1.14px rgba(148, 148, 148, 0.5);transform: translate(0,2px);transition: 0.3s}
+/*	产品4*/
+	.chanp2{max-width: 1200px;margin: 0 auto;overflow: hidden;margin-top: 60px;border:1px solid lightgray; }
+	.hang04{width: 90%; margin:0 auto;margin-top: 14px;}
+	.gexian01{background-color: rgb(48, 83, 164);width: calc(30%);height: 2px;float: left;}
+	.gexian3{background-color:#a0a0a0;width:calc(70%);height: 1px;float: left; }
+	.dahezi{margin: 30px 0;max-width:1200px;overflow: hidden;}
+	.fenge{display: none}
+	.fuwu0{float: left;max-width:calc(100% / 4 - 80px);margin: 0 40px;box-sizing: border-box;}
+	.fuwu0 img{float: left;margin-bottom: 22px}
+	.fuwu0 img:hover{box-shadow: 0px 8px 4.86px 1.14px rgba(148, 148, 148, 0.5);transform: translate(0,2px);transition: 0.3s;}
+	.wei{color: black;display: block;text-align: center;width:200px;margin-bottom: 10px}
+	.wei:hover{color: red}
+	@media(max-width:1180px){.fenge{display: block}.fuwu0{max-width:calc(100% / 2 - 80px);}}
+	@media(max-width:600px){.fenge{display: block}.fuwu0{max-width:calc(100% / 2 - 10px);}}
+/*	yewei*/
+	.yewei{max-width: 1200px;overflow:hidden;margin:146px auto 0;background-color:#e3e3e3;}
+	.y01{float: left;font-size:14px;line-height: 36px;}
+	.co{float: left;margin: 1% 8%;color: black;}
+	.y02{float: right;margin: 1% 5%}
+	.co:hover{color: red}
+	.y02:hover{box-shadow: 0px 8px 4.86px 1.14px rgba(148, 148, 148, 0.5);transform: scale(1.2)}
+	@media(max-width:1185px){.y02{float: left;margin-left:calc(50% - 37px);margin-top: 30px;margin-bottom: 30px }}
+
+</style>
+
+</head>
+
+<body>
+<!--导航-->
+<div class="header">
+	<a  href="index.html" class="logo"><img src="image/logo.png"></a>
+	<a class="shouye" href="junji.html">首页</a>
+	<div class="nav">
+		<a href="about_us.html" target="_blank" class="biaoqian">关于君集</a>
+		<a href="#" class="biaoqian">最新动态</a>
+		<a href="#" class="biaoqian">技术创新</a>
+		<a href="tech_intro.html" target="_blank" class="biaoqian">解决方案</a>
+		<a href="conta_us.html" target="_blank" class="biaoqian">联系我们</a>
+	</div>
+	<div class><img class="phone" src="image/tubiao1phone.gif"><div class="tel">027-81888198</div></div>
+</div>
+<!--banner-->
+    <div class="banner">
+        <img src="image/banner.jpg">
+        <div class="round"></div>
+        <div class="tound"></div>
+        <div class="yound"></div>    
+    </div>
+<!--chanping-->
+<div class="chanp1">
+	<div class="jieshao1">
+		<div class="hang01">
+        <div class="xin"><img src="image/xinwen.gif"></div>
+		<div class="zui">最新资讯</div>
+		<a class="more" href="#">MORE＞</a>
+		 <div class="clearfix"></div>
+		<div class="gexian"></div>
+	<div class="gexian2"></div>
+		</div>
+	
+	<div class="list">
+		<ul>
+			<li><a href="">新起点，新征程——君集公司首期2018年新员工...</a></li>
+			<li><a href="">新华网：武汉汤逊湖一项国际领先技术处理尾水...</a></li>
+			<li><a href="">人民日报：新技术提升污水处理厂尾水水质...</a></li>
+			<li><a href="">中国工程院院士李培根参观调研汤逊湖污水处理厂...</a></li>
+		</ul>
+	</div>
+	<div class="list2">
+			<dl>
+			<dd>[2018-06-22]</dd>
+			<dd>[2018-06-01]</dd>
+			<dd>[2018-05-05]</dd>
+			<dd>[2018-04-29]</dd>
+			</dl>
+	</div>
+	</div>
+	
+<!--服务模块-->
+	
+	<div class="jieshao2">
+	<div class="hang02">
+	<div class="xin"><img src="image/shezhi.gif"></div>
+	<div class="zui">服务模块</div>
+	<a class="more" href="#">MORE＞</a>	</div>
+	<div class="clearfix"></div>
+	<div class="hezi">
+	<div class="fuwu01"><img src="image/fuwu01.gif"><a class="wenzi" href="#">技术支持服务</a>
+	</div>
+	<div class="fuwu02"><img src="image/fuwu02.gif"><a class="wenzi" href="#">设备供应服务</a>
+	</div></div>		
+	</div>
+<!--xiaobanner-->
+	<div class="jieshao3"><img src="image/xiaobanner.gif"><div class="genghao">更好的地表水方案<br><a class="xiangqing" href="#">了解详情＞</a></div>
+	</div>
+		<div class="clearfix"></div>
+	</div>
+<!--产品04-->
+<div class="chanp2">
+	<div class="jieshao4">
+		<div class="hang04">
+        <div class="xin"><img src="image/fangfajin.gif"></div>
+		<div class="zui">成功案例</div>
+		<a class="more" href="#">MORE＞</a>		
+  <div class="clearfix"></div>
+	       <div class="gexian01"></div>
+	       <div class="gexian3"></div>
+	    </div>
+	</div>
+  <div class="clearfix"></div>
+	<div class="dahezi">
+		   <div class="fuwu0"><img src="image/xingmu01.gif"><a class="wei" href="#">浙江嵊州污水处理厂</a>
+	       </div>
+		   <div class="fuwu0"><img src="image/xiangmu02.gif"><a class="wei" href="#">藁城污水处理中心</a>
+	       </div>
+	       <div class="fenge" style="clear: both"></div>
+	       <div class="fuwu0"><img src="image/xiangmu03.gif"><a class="wei" href="#">武汉市汤逊湖污水处理厂</a>
+	       </div>
+	       <div class="fuwu0"><img src="image/xiangmu04.gif"><a class="wei" href="#">潜江市城北污水处理厂</a>
+	       </div>			
+	</div>	
+</div>	
+<!--yewei-->
+<div class="yewei">
+	<img class="y02" src="image/erweima.gif">
+	<div class="y01">
+	<a class="co" href="">Copyright ©️2018</a>
+	<a class="co" href="">版权所有：正道创意工作室</a>
+	<a class="co" href="">技术支持：正道网络</a>
+	<a class="co" href="">鄂xxx备-xxxxxx号-1</a>
+	<a class="co" href="">地址：湖北省武汉市洪山区黄家湖大学城3号</a>	
+	</div>
+	
+</div>
+    
+
+</body>
+</html>

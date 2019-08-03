@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>胡棋智的练习作品</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/pages.css">
+    <link href="favicon.ico" rel="shortcut icon" type="image/x-icon"/>
+</head>
+<body>
+<!--基础导航-->
+<header class="pages-nav" id="scrollPart">
+    <div class="mt">
+        <a class="logo" href="index.html">
+            <img src="img/logo.png" alt="logo" title="返回首页">
+        </a>
+        <ul class="p-nav">
+            <li><a href="article.html">文章</a><span id="nav-1"></span></li>
+            <li><a href="works.html">作品</a><span id="nav-2"></span></li>
+            <li><a href="practic.html" class="hovered-01">练习间</a><span id="nav-3"></span></li>
+            <li><a href="doc/myResume(胡棋智).pdf">个人简介</a><span id="nav-4"></span></li>
+        </ul>
+    </div>
+</header>
+<!--基本导航到此结束-->
+<!--banner部分-->
+<div class="s-banner practice-banner" id="main"></div>
+<!--banner部分结束-->
+<div class="mt">
+    <div class="artcs">
+       <!--以下为放图地方-->
+        <div class="cards add-nature">
+            <div class="practice-pics"></div>
+            <p>自我满意度<span>60%</span></p>
+        </div>
+        <div class="cards add-nature">
+            <div class="practice-pics"></div>
+            <p>自我满意度<span>60%</span></p>
+        </div>
+        <div class="cards add-nature">
+            <div class="practice-pics" style="height: 330px"></div>
+            <p>自我满意度<span>60%</span></p>
+        </div>
+        <div class="cards add-nature">
+            <div class="practice-pics"></div>
+            <p>自我满意度<span>60%</span></p>
+        </div>
+
+
+
+        <!--以上部分为练习放图处-->
+        <div class="select-pages">
+            <a href="#">1</a>
+            <a href="#">2</a>
+            <a href="#">3</a>
+            <a href="#">4</a>
+            <a href="#">下一页</a>
+        </div>
+    </div>
+    <div class="net-links">
+        <p><span>网页作品</span></p>
+        <div><a href="archive/junji/junji.html" class="link-01"></a></div>
+        <div><a href="archive/shiguangji/shiguangji.html" class="link-02"></a></div>
+        <div><a href="archive/go-tech/zou-ba.html" class="link-03"></a></div>
+    </div>
+</div>
+
+
+
+<!--页尾部分-->
+<div class="page-footer">
+    <div class="mt page-mt">
+        <a href="http://mp.weixin.qq.com/profile?src=3&timestamp=1550214228&ver=1&signature=uRwpF8ETyKAoe7TcBFy0RVo0SLyOxqo6P3Xbw0DOXsWF4KIjLxTP8B3BkBF0NyYnXnH962c-hzC7Xa*nYhkJmg==">关注我的公众号</a>
+        <a href="practic.html">查看网页作品</a>
+        <a href="doc/myResume(胡棋智).pdf">下载我的简历<span></span></a>
+        <a href="archive/archive.html" title="已于2018年9月停止更新">旧版网站</a>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+<!--引入通用js样式表-->
+<script src="js/common.js"></script>
+<script>
+    var picPractic=document.getElementsByClassName("practice-pics");
+    console.log(picPractic)
+    for (var i=0;i<picPractic.length;i++){
+        picPractic[i].style.backgroundImage="url(img/practice/prt-0"+i+".jpg)";
+    };
+</script>
+
+</body>
+</html>

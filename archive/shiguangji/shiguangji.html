@@ -1,0 +1,335 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>时光记==婚纱摄影</title>
+    <style>
+        a {
+            font-family: Microsoft YaHei;
+            text-decoration: none;
+        }
+
+        img {
+            display: block
+        }
+
+        .nav {
+            height: 76px;
+            background-color: rgb(88, 88, 88);
+            opacity: 0.8;
+            position: absolute;
+            top: 0;
+            width: 1920px;
+        }
+
+        body {
+            width: 1920px;
+            position: relative;
+            left: -10px;
+            top: -10px
+        }
+
+        .ju_zhong {
+            margin: 0 auto;
+            width: 1400px;
+        }
+
+        .logo {
+            float: left;
+            margin: 6px 71px 20px;
+        }
+
+        .lian_jie {
+            float: left
+        }
+
+        .lian_jie a {
+            padding: 0 27px;
+            font-size: 18px;
+            color: white;
+            line-height: 76px;
+            float: left;
+        }
+
+        .lian_jie a:hover {
+            background-color: #eb6f6f
+        }
+
+        .contact {
+            right: 330px;
+            left: 1470px;
+            font-size: 18px;
+            background-color: white;
+            width: 116px;
+            height: 36px;
+            text-align: center;
+            border-radius: 8px;
+            top: 18px;
+            line-height: 36px;
+            z-index: 2;
+            position: fixed
+        }
+
+        .contact a {
+            color: red
+        }
+
+        .yingcang {
+            width: 300px;
+            height: 100px;
+            background-color: white;
+            font-size: 18px;
+            text-align: left;
+            padding-left: 38px;
+            position: relative;
+            right: 214px;
+            border-radius: 8px;
+            line-height: 50px;
+            font-family: Microsoft YaHei;
+            display: none
+        }
+
+        .contact:hover .yingcang {
+            display: block;
+        }
+
+        .banner {
+            z-index: -1;
+            max-width: 1920px;
+        }
+
+        .clear-fix {
+            clear: both
+        }
+
+        .box {
+            margin: 0 auto;
+            width: 1400px;
+            overflow: hidden;
+        }
+
+        .xiao01 {
+            float: left;
+            width: 510px;
+            height: 500px;
+            background-color: #4383e4;
+            color: white
+        }
+
+        .xiao02 {
+            float: right;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .xiao02 img:hover {
+            filter: brightness(105%);
+            transform: scale(1.2);
+            transition: 1s
+        }
+
+        .sanjiao01 {
+            position: absolute;
+            top: 394px;
+        }
+
+        .xiao04 {
+            float: right;
+            width: 510px;
+            height: 500px;
+            background-color: #ffeede;
+        }
+
+        .xiao05 {
+            float: left;
+            position: relative;
+            overflow: hidden
+        }
+
+        .xiao05 img:hover {
+            filter: brightness(105%);
+            transform: scale(1.2);
+            transition: 1s
+        }
+
+        .sanjiao02 {
+            position: absolute;
+            top: 394px;
+            right: 0;
+        }
+
+        h1 {
+            font-family: Adobe Heiti Std R;
+            font-size: 30px;
+            margin-left: 85px;
+            margin-top: 10%;
+            margin-bottom: 8% px
+        }
+
+        h2 {
+            font-family: Adobe Heiti Std R;
+            font-size: 48px;
+            margin-left: 85px;
+            margin-bottom: 18%;
+        }
+
+        h3 {
+            font-family: Adobe Heiti Std R;
+            font-size: 24px;
+            margin-left: 85px;
+            margin-bottom: 12%;
+        }
+
+        h4 {
+            font-family: Adobe Heiti Std R;
+            font-size: 14px;
+            margin-left: 85px;
+        }
+
+        .kepian {
+            margin: 0 auto;
+            overflow: hidden;
+            position: relative;
+        }
+
+        .mohu {
+            filter: blur(3px);
+        }
+
+        .kepian:hover .mohu {
+            filter: blur(0);
+            transition: 0.5s
+        }
+
+        .zhibiao {
+            position: absolute;
+            right: 343px;
+            bottom: 167px
+        }
+
+        .yewei {
+            width: 1400px;
+            margin: 0 auto;
+            height: 480px;
+            background-color: #545454;
+            overflow: hidden
+        }
+
+        h6 {
+            font-family: Microsoft YaHei;
+            font-size: 18px;
+            color: white;
+            display: block;
+            margin-left: 110px;
+        }
+
+        .yewei ul {
+            color: red;
+            font-family: Microsoft YaHei;
+            font-size: 18px;
+            float: left;
+            margin-left: 70px;
+            margin-right: 42px;
+        }
+
+        .yewei li {
+            color: #ececec;
+            font-size: 14px;
+            margin-top: 30px;
+        }
+
+        .yewei a {
+            color: white
+        }
+
+        .yewei .huang {
+            color: yellow
+        }
+    </style>
+
+
+</head>
+
+
+<body>
+<div class="contact"><a href="">联系我们</a>
+    <div class="yingcang"><p>联系电话：027-88888888<br>QQ：88888888</p></div>
+</div>
+<div class="banner"><img src="images/banner.jpg" alt="男女一起笑"></div>
+<div class="nav">
+    <div class="ju_zhong">
+        <div class="logo"><img src="images/logo.png" alt=""></div>
+
+        <div class="lian_jie"><a href="shiguangji.html">时光首页</a>
+            <a href="yang_zhang.html" target="_blank">样片欣赏</a>
+            <a href="she_shi.html" target="_blank">摄影师自选</a>
+            <a href="">档期预约</a>
+            <a href="jie_shao.html" target="_blank">关于时光记</a>
+            <a href="kou_bei.html" target="_blank">口碑与评价</a></div>
+    </div>
+</div>
+
+
+<!--小banner-->
+<div class="box">
+    <div class="xiao01"><h1>All in the senery</h1>
+        <h2>人景相衬</h2>
+        <h3>大师拍摄/助手陪同/天气/风景</h3><h4>极致外景摄影；满足您挑剔眼光</h4></div>
+    <div class="xiao02"><a href="#"><img src="images/New collection.jpg" alt="拥抱的笑"></a>
+        <img class="sanjiao01" src="images/sanjiao1.png" alt="">
+    </div>
+    <div class="xiao03"><img src="images/fixbanner.jpg" alt="分开的装饰"></div>
+    <div class="xiao04"><h1>Spring we are here</h1>
+        <h2>春意盎然</h2>
+        <h3>自助报价/拍摄天数/场景/风格特色</h3><h4>高端内景摄影；诚意私人定制</h4></div>
+    <div class="xiao05"><a href="#"><img src="images/Fall in Love.jpg" alt="亲嘴笑"></a><img class="sanjiao02"
+                                                                                          src="images/sanjiao2.png"
+                                                                                          alt="sanjiao"></div>
+</div>
+
+
+<!--最后模块-->
+<div class="kepian"><img class="mohu" src="images/meet you and love you.jpg" alt="zuihou">
+    <div class="zhibiao"><a href=""><img src="images/zhishi.png" alt="kepan"></a></div>
+</div>
+
+<div class="yewei">
+    <div class="clear-fix"></div>
+    <h6>站点导航</h6>
+
+    <ul>HOME
+    </ul>
+
+    <ul type="none">BRAND
+        <li><a href="">时光记视觉中心</a></li>
+        <li><a href="">时光记技术输出案</a></li>
+        <li><a href="">时光摄影客服中心</a></li>
+        <li><a href="">时光记造型设计室</a></li>
+    </ul>
+
+    <ul type="none">ABOUT US
+        <li><a href="">时光记品牌介绍</a></li>
+        <li><a href="">时光记商铺大全</a></li>
+        <li><a class="huang" href="#">时光记人才计划</a></li>
+        <li><a href="">快速了解时光记</a></li>
+        <li><a href="">免责声明及法律条款</a></li>
+    </ul>
+
+    <ul type="none">WORK SHOW
+        <li><a href="">作品小样</a></li>
+        <li><a class="huang" href="#">每日客片更新</a></li>
+        <li><a href="">高端棚拍系列</a></li>
+        <li><a href="">时尚外景系列</a></li>
+        <li><a href="">创意年轻系列</a></li>
+    </ul>
+
+    <ul type="none">NEWS
+        <li><a href="">最新新闻公告</a></li>
+        <li><a class="huang" href="#">我们的活动</a></li>
+        <li><a href="">时光记电子刊</a></li>
+    </ul>
+</div>
+
+
+</body>
+</html>

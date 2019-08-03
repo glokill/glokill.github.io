@@ -1,0 +1,565 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>时光记==婚纱摄影</title>
+    <style>
+        a {
+            font-family: Microsoft YaHei;
+            text-decoration: none;
+        }
+
+        img {
+            display: block
+        }
+
+        .nav {
+            height: 76px;
+            background-color: rgb(88, 88, 88);
+            width: 1920px;
+            overflow: hidden;
+        }
+
+        body {
+            width: 1920px;
+            position: relative;
+            left: -10px;
+            top: -10px
+        }
+
+        .ju_zhong {
+            margin: 0 auto;
+            width: 1400px;
+        }
+
+        .logo {
+            float: left;
+            margin: 6px 71px 20px;
+        }
+
+        .lian_jie {
+            float: left
+        }
+
+        .lian_jie a {
+            padding: 0 27px;
+            font-size: 18px;
+            color: white;
+            line-height: 76px;
+            float: left;
+        }
+
+        .lian_jie a:hover {
+            background-color: #eb6f6f
+        }
+
+        .lian_jie a:nth-child(6) {
+            background-color: #eb6f6f
+        }
+
+        .contact {
+            right: 330px;
+            left: 1470px;
+            font-size: 18px;
+            background-color: white;
+            width: 116px;
+            height: 36px;
+            text-align: center;
+            border-radius: 8px;
+            top: 18px;
+            line-height: 36px;
+            z-index: 2;
+            position: fixed
+        }
+
+        .contact a {
+            color: red
+        }
+
+        .yingcang {
+            width: 300px;
+            height: 100px;
+            background-color: white;
+            font-size: 18px;
+            text-align: left;
+            padding-left: 38px;
+            position: relative;
+            right: 214px;
+            border-radius: 8px;
+            line-height: 50px;
+            font-family: Microsoft YaHei;
+            display: none
+        }
+
+        .contact:hover .yingcang {
+            display: block;
+        }
+
+        .banner {
+            max-width: 1920px
+        }
+
+        .clear-fix {
+            clear: both
+        }
+
+        .fuwu {
+            width: 1400px;
+            margin: 70px auto;
+            overflow: hidden;
+        }
+
+        .zuo {
+            float: left;
+            width: 713px;
+            margin-left: 20px
+        }
+
+        .hong {
+            color: red;
+            font-size: 36px;
+            font-family: Microsoft YaHei;
+        }
+
+        .bt {
+            font-size: 36px;
+            font-family: Microsoft YaHei;
+        }
+
+        .fu_biao {
+            margin: 40px 0;
+            display: block;
+            font-size: 18px;
+            color: #515151;
+        }
+
+        .zuo ul {
+            font-family: Microsoft YaHei;
+            line-height: 32px;
+            margin-left: -40px
+        }
+
+        .you {
+            float: right;
+            margin-right: 20px;
+            margin-top: 90px
+        }
+
+        .list {
+            width: 1400px;
+            overflow: hidden;
+            margin: 0 auto;
+            margin-bottom: 100px;
+        }
+
+        .you_bian {
+            font-size: 18px;
+            width: 105px;
+            height: 24px;
+            border: 1px solid red;
+            padding-left: 15px;
+            margin-right: 70px;
+            margin-top: 8px;
+            float: right
+        }
+
+        .hang_1 {
+            border-bottom: 1px solid #848484;
+            overflow: hidden;
+            float: none;
+            padding-bottom: 10px;
+        }
+
+
+        /*	评论部分*/
+        .list h1 {
+            font-size: 18px;
+            color: #545454;
+            padding-left: 20px;
+        }
+
+        table {
+            width: 1400px;
+        }
+
+        table td {
+            font-family: Microsoft YaHei;
+            float: left;
+            line-height: 32px;
+        }
+
+        .dian01 {
+            margin: 30px 45px 30px 40px;
+            width: 808px;
+            float: left;
+            text-align: justify
+        }
+
+        .dian02 {
+            margin-left: 72px;
+            margin-top: 48px;
+            text-align: justify
+        }
+
+        .dian04 {
+            margin: 30px 0;
+            text-align: justify
+        }
+
+        table .dian03 {
+            color: #646464;
+            float: right;
+            margin: 48px 87px 0 0;
+            text-align: justify
+        }
+
+        .fan_ye {
+            margin: 32px 86px 87px 0;
+            float: right;
+        }
+
+        .fan_ye div {
+            float: left;
+            line-height: 22px;
+            font-family: Microsoft YaHei;
+        }
+
+        /*	表格*/
+        .biao_ge {
+            width: 1400px;
+            overflow: hidden;
+            margin: 0 auto;
+            margin-bottom: 100px;
+        }
+
+        .xiankuan {
+            border: 1px solid black;
+            width: 1218px;
+            height: 227px;
+            margin: 0 auto;
+            clear: both;
+            padding-left: 72px;
+            padding-right: 35px;
+            overflow: hidden;
+        }
+
+        .fen {
+            margin-top: 30px;
+            float: left;
+            width: 100%;
+        }
+
+        .zuo_b {
+            width: 500px;
+            float: left
+        }
+
+        .zuo_b div span {
+            display: block;
+            float: left;
+            font-family: Microsoft YaHei;
+            color: white;
+            width: 180px;
+            height: 30px;
+            line-height: 30px;
+            background-color: #eb7473;
+            text-align: center;
+        }
+
+        .liu_01 {
+            float: left;
+            width: 173px;
+            height: 22px;
+            margin-left: 46px;
+        }
+
+        .you_b {
+            float: right;
+            margin-top: 30px;
+        }
+
+        .liu_02 {
+            width: 604px;
+            height: 129px;
+            border: 1px solid black;
+        }
+
+        .pai_02 {
+            clear: right;
+            margin-top: 12px;
+        }
+
+        .liu_04, .liu_03 {
+            float: right;
+            width: 130px;
+            height: 30px;
+            background-color: #eb7473;
+            border: 1px solid black;
+            line-height: 30px;
+            text-align: center;
+            color: white;
+        }
+
+        .liu_04 {
+            margin-right: 52px;
+        }
+
+        .liu_03 {
+            margin-right: 45px;
+        }
+
+
+        .yewei {
+            width: 1400px;
+            margin: 0 auto;
+            height: 480px;
+            background-color: #545454;
+            overflow: hidden
+        }
+
+        h6 {
+            font-family: Microsoft YaHei;
+            font-size: 18px;
+            color: white;
+            display: block;
+            margin-left: 110px;
+        }
+
+        .yewei ul {
+            color: red;
+            font-family: Microsoft YaHei;
+            font-size: 18px;
+            float: left;
+            margin-left: 70px;
+            margin-right: 42px;
+        }
+
+        .yewei li {
+            color: #ececec;
+            font-size: 14px;
+            margin-top: 30px;
+        }
+
+        .yewei a {
+            color: white
+        }
+
+        .yewei .huang {
+            color: yellow
+        }
+    </style>
+
+
+</head>
+
+
+<body>
+<div class="contact"><a href="">联系我们</a>
+    <div class="yingcang"><p>联系电话：027-88888888<br>QQ：88888888</p></div>
+</div>
+
+<div class="nav">
+    <div class="ju_zhong">
+        <div class="logo"><img src="images/logo.png" alt=""></div>
+
+        <div class="lian_jie"><a href="shiguangji.html" target="_blank">时光首页</a>
+            <a href="yang_zhang.html" target="_blank">样片欣赏</a>
+            <a href="she_shi.html" target="_blank">摄影师自选</a>
+            <a href="">档期预约</a>
+            <a href="jie_shao.html" target="_blank">关于时光记</a>
+            <a href="kou_bei.html">口碑与评价</a></div>
+    </div>
+</div>
+<div class="banner"><img src="images/banner_kb.jpg" alt="男女一起笑"></div>
+
+<!--9+1fuwu-->
+<div class="fuwu">
+    <div class="zuo">
+        <span class="bt">时光记独创<span class="hong">9+1服务</span>模式</span>
+        <div class="clear-fix"></div>
+        <span class="fu_biao">9个要，1个不要，争当行内最佳</span>
+        <ul type="none">
+            <li style="padding-bottom: 30px;line-height: 0px;">9要</li>
+            <li>1、面对顾客要热情</li>
+            <li>2、介绍服务要仔细</li>
+            <li>3、倾听客户要认真</li>
+            <li>4、解决方案要周密</li>
+            <li>5、解答问题要简洁</li>
+            <li>6、碰到难题要上报</li>
+            <li>7、提供服务要及时</li>
+            <li>8、如需离开要请求</li>
+            <li>9、迎送客户要亲切</li>
+            <li style="padding-top: 20px;line-height: 0px;">1不要：任何时候不要不耐烦</li>
+        </ul>
+    </div>
+    <div class="you"><img src="images/kefu.jpg" alt="kefu"></div>
+</div>
+
+
+<!--评论列表-->
+<div class="list">
+    <div class="hang_1">
+        <div style="font-size: 36px;color: red;margin-left: 10px;float: left">评价</div>
+        <div class="you_bian">
+            <div style="float: left;line-height: 24px;">按时间</div>
+            <div style="float: left;padding-left: 20px;padding-top: 8px"><img src="images/xiala.png" alt="xiala"></div>
+        </div>
+    </div>
+
+    <div style="border-bottom: 1px dashed #949494">
+        <table>
+            <tr>
+                <td class="dian01">&nbsp;&nbsp;&nbsp;&nbsp;去国外出差时，同事给我借用了一个红色的产品，精致优雅，我爱不释手。回来后立刻买了两个，一红一蓝，非常喜欢。</td>
+                <td class="dian04">产品类型：<br><a style="color: #646464">留言</a></td>
+                <td class="dian02">单**sir<a style="color: #646464">(匿名)</a></td>
+                <td class="dian03">2018.08.07</td>
+            </tr>
+        </table>
+    </div>
+
+    <div style="border-bottom: 1px dashed #949494">
+        <table>
+            <tr>
+                <td class="dian01">&nbsp;&nbsp;&nbsp;&nbsp;连续两次来时光记拍摄，第二次是个人写真，把我老婆拍的可漂亮了，她现在拿照片当头像了，感觉这里服务很好，有机会，我也叫朋友到这里来体验一下。</td>
+                <td class="dian04">产品类型：<br><a style="color: #646464">s-套餐01</a></td>
+                <td class="dian02">P**者<a style="color: #646464">(匿名)</a></td>
+                <td class="dian03">2018.08.06</td>
+            </tr>
+        </table>
+    </div>
+
+    <div style="border-bottom: 1px dashed #949494">
+        <table>
+            <tr>
+                <td class="dian01">昨天拍完照，超级累，索性就来说说我的体会吧，累是很累，当看到拍照效果的时候，我感觉划得来，现在很期待照片处理后的结果。希望能早点拿到照片。</td>
+                <td class="dian04">产品类型：<br><a style="color: #646464">s-套餐01</a></td>
+                <td class="dian02">P**者<a style="color: #646464">(匿名)</a></td>
+                <td class="dian03">2018.08.06</td>
+            </tr>
+        </table>
+    </div>
+
+    <div style="border-bottom: 1px dashed #949494">
+        <table>
+            <tr>
+                <td class="dian01">&nbsp;&nbsp;&nbsp;&nbsp;看起来质量很好，因为我外貌协会的，东西质感好心情就好。尚未使用，等用完再追评。</td>
+                <td class="dian04">产品类型：<br><a style="color: #646464">s-套餐02</a></td>
+                <td class="dian02">哈**哈<a style="color: #646464">(匿名)</a></td>
+                <td class="dian03">2018.08.05</td>
+            </tr>
+        </table>
+    </div>
+
+    <div style="border-bottom: 1px dashed #949494">
+        <table>
+            <tr>
+                <td class="dian01">&nbsp;&nbsp;&nbsp;&nbsp;我感觉效果超级*的哦，我上个月拍完，拍完的效果我感觉也就一般般啊，但是进过处理后，这个效果太棒了，果然摄影机构贵有贵的理由，时光记的设计师太牛了！</td>
+                <td class="dian04">产品类型：<br><a style="color: #646464">s-套餐03</a></td>
+                <td class="dian02">超**蛋<a style="color: #646464">(匿名)</a></td>
+                <td class="dian03">2018.08.05</td>
+            </tr>
+        </table>
+    </div>
+
+    <div style="border-bottom: 1px dashed #949494">
+        <table>
+            <tr>
+                <td class="dian01">&nbsp;&nbsp;&nbsp;&nbsp;不知道在这里拍摄有什么活动，我和我男朋友准备结婚了，打算拍一个看起来高档的，一辈子就这一次了，场景的话，能不能选择外地，比如青岛什么的？</td>
+                <td class="dian04">产品类型：<br><a style="color: #646464">留言</a></td>
+                <td class="dian02">高**婆<a style="color: #646464">(匿名)</a></td>
+                <td class="dian03">2018.08.05</td>
+            </tr>
+            <tr>
+                <td style="width: 680px;font-family: Microsoft YaHei;color:#eb7473;display:block;margin:0 40px 30px 166px;text-align: justify
+			">&nbsp;&nbsp;&nbsp;&nbsp;客服留言：尊敬的客户，您好，感谢您选择时光记，时光记将竭诚为您解答；时光记有专业的摄影大师，均拥有5年以上的人像摄影经验，值得您的信赖，另外，时光记可接受外地拍摄，时光记在长沙、青岛、苏州、南京均有拍摄合作工作室，去以上城市可免去助手费用，只需在产品外，额外支付摄影师的旅费及住宿费用，其他城市则需要增加两个助手的费用。希望能帮助到您。
+                </td>
+                <td style="margin-top: 48px;margin-left: 158px;color: #eb7473;font-family: Microsoft YaHei;">时光记（小慧）
+                </td>
+                <td class="dian03" style="color:#eb7473 ">2018.08.05</td>
+            </tr>
+        </table>
+    </div>
+
+    <div style="border-bottom: 1px dashed #949494">
+        <table>
+            <tr>
+                <td class="dian01">&nbsp;&nbsp;&nbsp;&nbsp;啦啦啦，我走过里了，你看不见我，请叫我神奇的凡小测，每天过来看看，审美就提高了，美女多多啊。。。</td>
+                <td class="dian04">产品类型：<br><a style="color: #646464">留言</a></td>
+                <td class="dian02">凡**测<a style="color: #646464">(匿名)</a></td>
+                <td class="dian03">2018.08.05</td>
+            </tr>
+        </table>
+    </div>
+
+    <div class="fan_ye">
+        <div style="border: 1px solid gray;padding: 0 14px"><a href="#" style="color: black">
+            <上一页
+        </a></div>
+        <div style="border: 1px solid gray;padding: 0 4px">1</div>
+        <div style="border: 1px solid gray;padding: 0 4px">2</div>
+        <div style="border: 1px solid gray;padding: 0 4px">3</div>
+        <div>...</div>
+        <div style="border: 1px solid gray;padding: 0 14px"><a href="#">下一页></a></div>
+    </div>
+</div>
+
+
+<!--liuyanbaioge-->
+<div class="biao_ge">
+    <div style="font-size: 36px;margin-left: 10px;float: left;margin-bottom: 15px">留言板</div>
+    <div class="xiankuan">
+        <div class="zuo_b">
+            <div class="fen"><span>姓名</span><input type="text" class="liu_01"></div>
+            <div class="fen"><span>留言类型</span><input type="text" class="liu_01"></div>
+            <div class="fen"><span>联系方式</span><input type="text" class="liu_01"></div>
+
+        </div>
+        <div class="you_b"><input type="text" class="liu_02">
+            <div class="pai_02"><a href="#" class="liu_04">提交</a><a href="#" class="liu_03">重置</a></div>
+        </div>
+    </div>
+
+
+</div>
+
+
+<div class="yewei">
+    <div class="clear-fix"></div>
+    <h6>站点导航</h6>
+
+    <ul>HOME
+    </ul>
+
+    <ul type="none">BRAND
+        <li><a href="">时光记视觉中心</a></li>
+        <li><a href="">时光记技术输出案</a></li>
+        <li><a href="">时光摄影客服中心</a></li>
+        <li><a href="">时光记造型设计室</a></li>
+    </ul>
+
+    <ul type="none">ABOUT US
+        <li><a href="">时光记品牌介绍</a></li>
+        <li><a href="">时光记商铺大全</a></li>
+        <li><a class="huang" href="#">时光记人才计划</a></li>
+        <li><a href="">快速了解时光记</a></li>
+        <li><a href="">免责声明及法律条款</a></li>
+    </ul>
+
+    <ul type="none">WORK SHOW
+        <li><a href="">作品小样</a></li>
+        <li><a class="huang" href="#">每日客片更新</a></li>
+        <li><a href="">高端棚拍系列</a></li>
+        <li><a href="">时尚外景系列</a></li>
+        <li><a href="">创意年轻系列</a></li>
+    </ul>
+
+    <ul type="none">NEWS
+        <li><a href="">最新新闻公告</a></li>
+        <li><a class="huang" href="#">我们的活动</a></li>
+        <li><a href="">时光记电子刊</a></li>
+    </ul>
+</div>
+
+
+</body>
+</html>

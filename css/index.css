@@ -1,0 +1,481 @@
+.banner {
+    overflow: hidden;
+    background: url("../img/banner.png") no-repeat center;
+    position: absolute;
+    width: 100%;
+    height: 929px;
+}
+.top-nav {
+    float: right;
+}
+.top-nav li {
+    float:left;
+    padding:20px  28px 0;
+    transform: translate(28px);
+}
+.top-nav li a {
+    float:left;
+    color: #fff;
+    margin-bottom: 10px;
+    font-family: "Microsoft YaHei";
+    /*color: #333;*/
+    /*当鼠标滚轮下拉后显示此代码*/
+}
+.top-nav li span {
+    clear: both;
+    height: 4px;
+    background-color: #fff;
+    /*background-color: #333;*/
+    display: none;
+}
+.top-nav li:nth-child(3) span {
+    display: none;
+}
+.top-nav li:nth-child(4) span {
+    display: none;
+}
+.top-nav li:hover {
+    font-weight: bold;
+}
+.top-nav li:nth-child(1):hover #nav-1{
+    display: block;
+}
+.top-nav li:nth-child(2):hover #nav-2{
+    display: block;
+}
+.top-nav li:nth-child(3):hover #nav-3{
+    display: block;
+}
+.top-nav li:nth-child(4):hover #nav-4{
+    display: block;
+}
+.me span h1{
+    font-size: 36px;
+    color: #fff;
+    position: relative;
+    left: calc(50% - 300px);
+    top: 240px;
+}
+.me a {
+    display: block;
+    font-size: 14px;
+    color: #fff;
+    width: 230px;
+    height: 40px;
+    border-radius: 20px;
+    background-color: #6d87d6;
+    line-height: 40px;
+    text-align: center;
+    position: relative;
+    left: calc(50% - 115px);
+    top: 470px;
+}
+.me a:hover {
+    box-shadow: 0 0 12px rgba(0,54,216,0.3);
+    background-color: #7e97e0;
+    transition: 0.3s;
+}
+/*banner部分到这里结束*/
+
+/*简单介绍分割部分开始*/
+.intro {
+    width: 980px;
+    height: 362px;
+    border-radius: 10px;
+    background-color: rgba(242,242,242,0.9);
+    box-shadow: 0 3px 9px rgba(128,128,128,0.9);
+    position: relative;
+    left: calc(50% - 490px);
+    top: 750px;
+    margin-bottom: -270px;
+}
+.intro div {
+    width: 260px;
+    height: 320px;
+    float: left;
+    margin: 20px 30px;
+}
+/*.book li:nth-child(1) {*/
+    /*width: 128px;*/
+    /*height: 128px;*/
+    /*border-radius: 50%;*/
+    /*background-color: #03899c;*/
+/*}*/
+/*.book li:nth-child(1) span {*/
+    /*display: block;*/
+    /*background: url("../img/ico-book.png") no-repeat center center;*/
+    /*width: 128px;*/
+    /*height: 128px;*/
+    /*filter: brightness(10000%);*/
+/*}*/
+
+.book li:nth-child(1) {
+    width: 128px;
+    height: 128px;
+    border-radius: 50%;
+    border: 4px solid #03899c;
+    margin: 30px 66px;
+}
+.bc01 span {
+    display: block;
+    width: 128px;
+    height: 128px;
+}
+.nth1 span {
+    background: url("../img/ico-book.png") no-repeat center center;
+}
+.nth2 span {
+    background: url("../img/ico-computer.png") no-repeat center center;
+}
+.nth3 span {
+    background: url("../img/ico-building.png") no-repeat center center;
+}
+.book li:nth-child(2) {
+    text-align: center;
+    font-size: 14px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 10px;
+}
+.book li:nth-child(3) {
+    width: 48px;
+    height: 2px;
+    display: block;
+    background-color: #cdcdcd;
+    margin:0 106px 30px;
+}
+.book li:nth-child(4) {
+    display: block;
+    margin: 0 30px;
+    width: 200px;
+    text-align: justify;
+    line-height: 18px;
+    color: #666;
+}
+.book li:nth-child(4) span {
+    color: #fb701c;
+}
+.book:hover .bc01 {
+    background-color: #03899c;
+    transition: 0.5s;
+}
+.book:hover .bc01 span {
+    filter: brightness(10000%);
+}
+.book:hover .bc03 {
+    background-color: #03899c;
+    transition: 0.5s;
+}
+/*简单介绍分割部分结束*/
+.fill {
+    width: 100%;
+    height: 1070px;
+    float: left;
+}
+
+/*最新文章部分开始*/
+.articles {
+    width: 100%;
+    float: left;
+}
+.articles h2 {
+    font-size: 28px;
+    color: #03899c;
+    margin-bottom: 16px;
+}
+.articles span {
+    color: #999;
+}
+.artc {
+    float: left;
+    width: 100%;
+    margin-top: 22px;
+}
+.img01 {
+    width: 580px;
+    height: 300px;
+    background-color: #efbc9f;
+}
+.img01 span {
+    width: 100%;
+    height: 300px;
+    display: block;
+    background: url("../img/article-01.png") no-repeat;
+    background-size: 100%;
+    position: relative;
+    left: 20px;
+    top: 20px;
+}
+.artc ul {
+    width: 480px;
+    text-align: justify;
+}
+.artc li:nth-child(1) a {
+    display: block;
+    color: #333;
+    font-weight: bold;
+    margin-top: 40px;
+}
+.artc li h3 {
+    font-size: 18px;
+}
+.artc li:nth-child(1) a:hover{
+    text-decoration: underline;
+}
+.artc li:nth-child(2),
+.artc li:nth-child(2) span {
+    font-size: 12px;
+    color: #999;
+    margin: 28px 0 40px;
+}
+.artc li:nth-child(3) {
+    width: 480px;
+    height: 70px;
+    overflow: hidden;
+    line-height: 18px;
+}
+.artc li:nth-child(3) a {
+    color: #666666;
+}
+.artc li:nth-child(4) a {
+    width: 200px;
+    float: left;
+    background-color: #03899c;
+    text-align: center;
+    line-height: 40px;
+    color: #fff;
+    font-family: "Microsoft YaHei";
+    margin-top: 40px;
+}
+.artc li:nth-child(3) a:hover {
+    text-decoration: underline;
+}
+.artc li:nth-child(4) a:hover {
+    background-color: #0e92a5;
+    box-shadow: 0 0 6px rgba(0,0,0,0.2);
+}
+/*分割线在这里*/
+.hr {
+    float: left;
+    width: 100%;
+    height: 1px;
+    background-color: #c2c3c3;
+    margin: 60px 0 5px;
+}
+.img02 {
+    width: 580px;
+    height: 300px;
+    background-color: #efbc9f;
+}
+.img02 span {
+    width: 580px;
+    height: 300px;
+    display: block;
+    background: url("../img/article-02.png") no-repeat;
+    background-size: 100%;
+    position: relative;
+    right: 20px;
+    top: 20px;
+}
+/*文章部分结束*/
+
+.works {
+    overflow: hidden;
+    background: url("../img/bg-02.png") no-repeat center;
+    width: 100%;
+    height: 1137px;
+    margin-top: 40px;
+    margin-bottom: -130px;
+}
+.worktittle {
+    text-align: center;
+    margin-top: 220px;
+    width: 100%;
+    float: left;
+    margin-bottom: 30px;
+}
+.worktittle h2 {
+    color: #fff;
+}
+.worktittle span {
+    color: #e5e5e5;
+}
+.f-btn {
+    position: relative;
+    margin-top: 40px;
+}
+
+/*swiper部分css*/
+.swiper-slide {
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+}
+.swiper-container {
+    margin: 0 auto;
+    position: relative;
+    overflow: hidden;
+    list-style: none;
+    width: 980px;
+    height: 520px;
+}
+
+.swiper-wrapper {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-transition-property: -webkit-transform;
+    transition-property: -webkit-transform;
+    -o-transition-property: transform;
+    transition-property: transform;
+    transition-property: transform, -webkit-transform;
+    -webkit-box-sizing: content-box;
+    box-sizing: content-box
+}
+
+.swiper-slide {
+    background-size: 100px 200px;
+    -webkit-flex-shrink: 0;
+    -ms-flex-negative: 0;
+    flex-shrink: 0;
+    position: relative;
+    -webkit-transition-property: -webkit-transform;
+    transition-property: -webkit-transform;
+    -o-transition-property: transform;
+    transition-property: transform;
+    transition-property: transform, -webkit-transform
+}
+.swiper-button-next, .swiper-button-prev {
+    position: absolute;
+    top: 350px;
+    width: 60px;
+    height: 200px;
+    margin-top: -160px;
+    cursor: pointer;
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+.swiper-button-next.swiper-button-disabled, .swiper-button-prev.swiper-button-disabled {
+    opacity: .35;
+    cursor: auto;
+    pointer-events: none;
+}
+
+.swiper-button-prev {
+    background-image: url("../img/btn-l.png");
+    left: -10px;
+    right: auto;
+    outline:none;
+}
+
+.swiper-button-next {
+    background-image: url("../img/btn-r.png");
+    right: -10px;
+    left: auto;
+    outline:none;
+}
+
+.swiper-pagination {
+    position: absolute;
+    text-align: center;
+    -webkit-transition: .3s opacity;
+    -o-transition: .3s opacity;
+    transition: .3s opacity;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+    z-index: 1
+}
+
+.swiper-container-horizontal > .swiper-pagination-bullets, .swiper-pagination-custom, .swiper-pagination-fraction {
+    bottom: 10px;
+    left: 0;
+    width: 100%
+}
+/*swiper代码到此结束*/
+
+
+
+/*插入作品图片部分开始*/
+.swiper-slide:nth-child(1) {
+    background: url("../img/works/picture-1.jpg") no-repeat center;
+    background-size: cover;
+}
+.swiper-slide:nth-child(2) {
+    background: url("../img/works/picture-2.jpg") no-repeat center;
+    background-size: cover;
+}
+.swiper-slide:nth-child(3) {
+    background: url("../img/works/picture-3.jpg") no-repeat center;
+    background-size: contain;
+}
+.swiper-slide:nth-child(4) {
+    background: url("../img/works/picture-4.jpg") no-repeat center;
+    background-size: contain;
+}
+.swiper-slide:nth-child(5) {
+    background: url("../img/works/picture-5.jpg") no-repeat center;
+    background-size: contain;
+}
+.swiper-slide:nth-child(6) {
+    background: url("../img/works/picture-6.jpg") no-repeat center;
+    background-size: contain;
+}
+.swiper-slide:nth-child(7) {
+    background: url("../img/works/picture-7.jpg") no-repeat center;
+    background-size: contain;
+}
+.swiper-slide:nth-child(8) {
+    background: url("../img/works/picture-8.jpg") no-repeat center;
+    background-size: contain;
+}
+.swiper-slide:nth-child(9) {
+    background: url("../img/works/picture-9.jpg") no-repeat center;
+    background-size: contain;
+}
+.swiper-slide:nth-child(10) {
+    background: url("../img/works/picture-10.jpg") no-repeat center;
+    background-size: contain;
+}
+/*查看全部作品按钮*/
+.btn-work {
+    text-align: center;
+    font-size: 14px;
+    color: #ffffff;
+    line-height: 28px;
+    width: 200px;
+    border: 1px dashed #fff;
+    border-radius: 14px;
+    display: block;
+    margin-top: 60px;
+}
+.btn-work:hover {
+    font-size: 16px;
+    transition: 0.4s;
+    box-shadow: 0 0 12px rgba(0,0,0,0.1);
+}
+
+/*页尾背景波浪部分*/
+.black-bg {
+    overflow: hidden;
+    max-width: 100%;
+    background-color: #1a1a1a;
+    position: relative;
+    z-index: -1;
+    height: 130px;
+}
